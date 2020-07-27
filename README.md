@@ -18,11 +18,12 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Multiple ssh keys](#multiple-ssh-keys)
-- [Multiple name and email](#multiple-name-and-email)
+- [Multiple ssh keys for different accounts](#multiple-ssh-keys-for-different-accounts)
+- [Multiple name and email for different repositories](#multiple-name-and-email-for-different-repositories)
+- [Remove sensitive file from repository](#remove-sensitive-file-from-repository)
 - [Authors](#authors)
 
-## Multiple ssh keys
+## Multiple ssh keys for different accounts
 
 generate ssh key
 ```bash
@@ -49,7 +50,7 @@ git clone according to new Host
 $ git clone git@xxxx.github.com:yyyy/zzzz.git
 ```
 
-## Multiple name and email
+## Multiple name and email for different repositories
 
 create a gitconfig
 ```bash
@@ -72,6 +73,33 @@ update global config ~/.gitconfig
 ```
 > all repositories under TARGET_FOLDER_PATH would use .xxxx.gitconfig
 
+
+## Remove sensitive file from repository
+
+remove file from repository
+```bash
+$ git filter-branch -f --tree-filter "rm -f PATH_OF_FILE"
+```
+
+clear temporary history
+```bash
+$ rm -rf .git/refs/original/refs/
+```
+
+expire all old history
+```bash
+$ git reflog expire --all --expire=now
+```
+
+remove unreachable objects
+```bash
+$ git gc --prune=now
+```
+
+push again
+```bash
+$ git push -f
+```
 
 
 ## Authors
