@@ -2,7 +2,7 @@
   <a href="" rel="noopener">
  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1024px-Git-logo.svg.png"  width="200" alt="Git"></a>
 </p>
-<h2 align="center">Git Demo</h2>
+<h1 align="center">Git Demo</h1>
 
 <div align="center">
 
@@ -10,8 +10,6 @@
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 
 </div>
-
----
 
 <p align="center"> Share some useful Git tricks
     <br> 
