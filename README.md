@@ -65,8 +65,8 @@ add to .xxxx.gitconfig
 update global config ~/.gitconfig
 ```
 [user]
-  name = John Doe
-  email = john@doe.tld
+  name = yourglobalname
+  email = yourglobalemail
 
 [includeIf "gitdir:TARGET_FOLDER_PATH"]
   path = ~/.xxxx.gitconfig
